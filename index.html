@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Radio Venezuela</title>
+<meta name="description" content="Privacy policy for the Radio Venezuela Android application by Cool App Helpdesk.">
+<style>
+  :root {
+    --bg: #f8fafc; --surface: #ffffff; --text: #0f172a; --muted: #64748b;
+    --primary: #2563eb; --primary-soft: #dbeafe; --border: #e2e8f0;
+    --positive: #15803d; --positive-bg: #dcfce7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f172a; --surface: #1e293b; --text: #e2e8f0; --muted: #94a3b8;
+      --primary: #93c5fd; --primary-soft: #1e3a8a; --border: #334155;
+      --positive: #4ade80; --positive-bg: #14532d;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 24px 96px; }
+  header { border-radius: 16px; padding: 32px 28px; margin-bottom: 24px;
+    background: linear-gradient(135deg, #1B5E20 0%, #2e7d32 55%, #1a3e1a 100%); color: #fff; }
+  header h1 { margin: 0 0 6px; font-size: 28px; font-weight: 700; letter-spacing: -0.01em; }
+  header p { margin: 0; opacity: 0.92; font-size: 15px; }
+  .card { background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 22px 26px; margin: 14px 0; }
+  h2 { font-size: 19px; font-weight: 600; margin: 0 0 12px; letter-spacing: -0.005em; }
+  p, ul, ol { margin: 0 0 12px; }
+  ul, ol { padding-left: 22px; } li { margin-bottom: 6px; }
+  .muted { color: var(--muted); font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-weight: 600; color: var(--muted); background: var(--primary-soft); }
+  tr:last-child td { border-bottom: none; }
+  code { background: var(--primary-soft); padding: 1px 6px; border-radius: 4px;
+    font-size: 13px; font-family: "SFMono-Regular", Consolas, Menlo, monospace; }
+  a { color: var(--primary); text-decoration: none; } a:hover { text-decoration: underline; }
+  .badge { display: inline-block; background: var(--positive-bg); color: var(--positive);
+    font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 20px; }
+  footer { margin-top: 32px; text-align: center; color: var(--muted); font-size: 13px; }
+  @media (max-width: 480px) {
+    .wrap { padding: 24px 16px 64px; }
+    header { padding: 24px 20px; } header h1 { font-size: 24px; }
+    .card { padding: 18px 20px; } h2 { font-size: 17px; }
+    table { font-size: 13px; } th, td { padding: 8px 10px; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p>Radio Venezuela &middot; last updated <time datetime="2026-06-18">June 18, 2026</time></p>
+</header>
+
+<section class="card">
+  <h2>1. Summary</h2>
+  <p>Radio Venezuela (&ldquo;the app&rdquo;) is a free radio streaming application that lets you listen to 89 Venezuelan radio stations live. It is published by <strong>Cool App Helpdesk</strong>.</p>
+  <ul>
+    <li>The developer <strong>collects no personal data</strong> beyond what you voluntarily submit through the optional feedback form. There are no user accounts and no developer-operated servers that collect telemetry or analytics.</li>
+    <li>All feedback you send (subject, message, and optional contact info) is transmitted to a Cloud Run endpoint and used solely to respond to your inquiry. It is not used for profiling, advertising, or any other purpose.</li>
+    <li>The app <strong>does not display advertisements</strong> and contains <strong>no third-party tracking SDKs</strong>.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>2. Data we collect</h2>
+  <p><strong>Minimal and only what you choose to share.</strong> Radio Venezuela does not collect personal data, telemetry, identifiers, device information, IP addresses, advertising IDs, or usage analytics. There are no user accounts.</p>
+  <p>The only data transmitted to a developer-operated server is what you type into the feedback form: a subject (optional), a message (required), and a contact email or phone (optional). This feedback is sent to a Cloud Run endpoint for the sole purpose of receiving your comments and responding if you provided contact information.</p>
+  <p>If you report a non-working station from the player, the app sends an auto-generated bug report that includes the station name, ID, stream URL, device model, and Android version. This data is used only to diagnose and fix broken station streams.</p>
+</section>
+
+<section class="card">
+  <h2>3. Data stored on your device</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Where</th><th>Sent off device?</th></tr></thead>
+    <tbody>
+      <tr><td>Station list (loaded from local JSON on first launch)</td><td>Local Room database</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>Favorite stations</td><td>Local Room database</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>Disabled (non-working) stations</td><td>Local Room database</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>UI language preference</td><td>App-private DataStore</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>Theme preference (light/dark)</td><td>App-private DataStore</td><td><span class="badge">Never</span></td></tr>
+      <tr><td>Feedback form data (subject, message, contact)</td><td>In-memory during composition</td><td><span class="badge">Sent when you tap send</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="card">
+  <h2>4. Permissions used</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>Reason</th><th>When asked</th></tr></thead>
+    <tbody>
+      <tr><td><code>INTERNET</code></td><td>Stream radio audio from station URLs and send feedback.</td><td>Auto-granted (normal permission)</td></tr>
+      <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Detect network connectivity to show appropriate error messages.</td><td>Auto-granted (normal permission)</td></tr>
+      <tr><td><code>FOREGROUND_SERVICE</code></td><td>Keep playing audio when the app is in the background.</td><td>Auto-granted on install</td></tr>
+      <tr><td><code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code></td><td>Declares the foreground service type as media playback (Android 14+).</td><td>Auto-granted on install</td></tr>
+      <tr><td><code>POST_NOTIFICATIONS</code> (Android 13+)</td><td>Show the media playback notification with transport controls.</td><td>First time playback starts</td></tr>
+    </tbody>
+  </table>
+  <p>You can revoke <code>POST_NOTIFICATIONS</code> at any time in <em>Android Settings &rarr; Apps &rarr; Radio Venezuela &rarr; Permissions</em>.</p>
+</section>
+
+<section class="card">
+  <h2>5. Network activity and third parties</h2>
+  <p id="network">Radio Venezuela makes network connections to the following endpoints:</p>
+  <ul>
+    <li><strong>Radio station stream URLs</strong> — Direct connections to radio broadcasters&rsquo; streaming servers (HTTP/HTTPS). The content is provided and controlled by the respective broadcasters. The developer has no control over, and assumes no responsibility for, the content or privacy practices of these third-party streaming servers.</li>
+    <li><strong>Station artwork images</strong> — Loaded from remote URLs via Coil image loader. These images are hosted on third-party CDNs controlled by the broadcasters or station directory services.</li>
+    <li><strong>Feedback API</strong> — POST requests to a Cloud Run endpoint hosted at <code>requests-847893873240.europe-west1.run.app</code>. This is the developer&rsquo;s own endpoint, used solely to receive user feedback and station reports.</li>
+    <li><strong>Station list API</strong> — A Retrofit GET call to fetch the station list on launch. If the server is unreachable, the app falls back to a local bundled station list.</li>
+  </ul>
+  <p>The app contains <strong>no advertising SDKs, no analytics SDKs, no crash-reporting SDKs, and no social or attribution SDKs</strong>. All third-party libraries used (Media3 ExoPlayer, Retrofit, OkHttp, Coil, Room) operate strictly within the scope described above and do not transmit data to the developer or to third parties beyond what is explicitly described.</p>
+</section>
+
+<section class="card">
+  <h2>6. Children&rsquo;s privacy</h2>
+  <p>Radio Venezuela is a general-interest radio streaming app. It is not directed at children under 13, but we recognize that minors may use it. The developer collects no personal information from any user, regardless of age, beyond what is voluntarily submitted in the feedback form.</p>
+  <p>The app contains no advertisements, no behavioral tracking, and no in-app purchases.</p>
+</section>
+
+<section class="card">
+  <h2>7. Data retention and deletion</h2>
+  <p>Because the developer collects nothing beyond feedback submissions, there is nothing for us to retain or delete on our end beyond what is necessary to respond to your inquiry. Feedback submissions are kept only as long as needed to address the reported issue.</p>
+  <p>To remove locally stored data (favorites, disabled stations, preferences), clear the app&rsquo;s storage in <em>Android Settings &rarr; Apps &rarr; Radio Venezuela &rarr; Storage &rarr; Clear storage</em>, or uninstall the app.</p>
+  <p>Data transmitted to third-party streaming servers and CDNs is governed by those parties&rsquo; own privacy policies. The developer has no control over and is not responsible for their data practices.</p>
+</section>
+
+<section class="card">
+  <h2>8. Security</h2>
+  <p>The app stores preferences and cached station data in the app&rsquo;s private storage, protected by Android&rsquo;s built-in application sandboxing. Network requests to the feedback API are made over HTTPS. The app is distributed through the Google Play Store, which verifies the developer signing key on every update.</p>
+</section>
+
+<section class="card">
+  <h2>9. Changes to this policy</h2>
+  <p>If any material aspect of how the app handles data ever changes, this page will be updated and the &ldquo;last updated&rdquo; date above will be bumped. Continued use after a change constitutes acceptance.</p>
+</section>
+
+<section class="card">
+  <h2>10. Contact</h2>
+  <p>Questions or feedback? Email <a href="mailto:coolapphelpdesk@gmail.com">coolapphelpdesk@gmail.com</a>.</p>
+</section>
+
+<footer>&copy; 2026 Cool App Helpdesk &middot; Radio Venezuela</footer>
+
+</main>
+</body>
+</html>
